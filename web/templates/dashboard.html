@@ -1,0 +1,21 @@
+{% extends "base.html" %}{% block content %}
+<div class="page-header"><h1>SPECTRE Dashboard</h1><span class="badge badge-green">All Systems Operational</span></div>
+<div class="stats-grid">
+<div class="stat-card"><div class="stat-label">Active Agents</div><div class="stat-value">10/10</div></div>
+<div class="stat-card"><div class="stat-label">Profiles Today</div><div class="stat-value">{{ "{:,}".format(total_profiles) }}</div></div>
+<div class="stat-card"><div class="stat-label">Tokens Consumed</div><div class="stat-value">{{ "{:.1f}M".format(total_tokens / 1e6) }}</div></div>
+<div class="stat-card"><div class="stat-label">Avg Perf Score</div><div class="stat-value">74/100</div></div>
+</div>
+<div class="grid-2">
+<div class="card"><h2>🤖 Agent Status</h2>
+{% for a in agents %}<div class="agent-row"><span class="status-dot green"></span><span class="agent-name">{{ a.name }}</span><span class="text-muted">{{ "{:,}".format(a.tokens) }} tok</span><span class="badge badge-green">{{ a.success }}%</span></div>{% endfor %}</div>
+<div class="card"><h2>📋 Recent Profiles</h2>
+<table class="data-table"><thead><tr><th>File</th><th>Score</th><th>Issues</th><th>Time</th></tr></thead>
+<tbody>
+<tr><td>src/api/handler.py</td><td><span class="score-badge red">58</span></td><td>28</td><td class="text-muted">2 min ago</td></tr>
+<tr><td>src/db/pool.py</td><td><span class="score-badge yellow">72</span></td><td>14</td><td class="text-muted">5 min ago</td></tr>
+<tr><td>src/worker/tasks.py</td><td><span class="score-badge green">89</span></td><td>5</td><td class="text-muted">8 min ago</td></tr>
+<tr><td>src/cache/redis.py</td><td><span class="score-badge green">91</span></td><td>3</td><td class="text-muted">12 min ago</td></tr>
+<tr><td>src/auth/session.py</td><td><span class="score-badge yellow">67</span></td><td>19</td><td class="text-muted">15 min ago</td></tr>
+</tbody></table></div>
+</div>{% endblock %}

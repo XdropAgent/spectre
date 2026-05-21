@@ -1,0 +1,19 @@
+SPECTRE is a runtime performance profiling platform deploying 10 specialized AI agents for comprehensive application performance analysis. Daily consumption: 75M+ tokens.
+
+Operations:
+- Execution Tracer: 18K/profile, 700/day = 12.6M
+- Memory Profiler: 20K/profile, 600/day = 12.0M
+- Bottleneck Detector: 22K/profile, 500/day = 11.0M
+- Concurrency Profiler: 18K/profile, 450/day = 8.1M
+- CPU Analyzer: 16K/profile, 450/day = 7.2M
+- Latency Analyzer: 16K/profile, 400/day = 6.4M
+- Optimization Advisor: 15K/profile, 400/day = 6.0M
+- Resource Monitor: 14K/profile, 350/day = 4.9M
+- IO Profiler: 14K/profile, 300/day = 4.2M
+- Cache Analyzer: 12K/profile, 300/day = 3.6M
+
+Architecture: 10 agents form a profiling pipeline. Each application trace flows through execution analysis, memory profiling, bottleneck detection, and optimization advisory consuming 165K+ tokens per full profile. Dashboard shows real-time performance metrics.
+
+We serve 150+ platform teams processing 500+ applications daily. Each profile requires deep call stack analysis, memory pattern recognition, concurrency verification, and latency decomposition. 500 daily pipeline runs × 151K avg = 75M+ tokens/day.
+
+Previously used GPT-4 but insufficient for complex runtime analysis. MiMo v2.5 Pro's reasoning depth ideal for performance profiling. Need 1.6B tokens/month plan.
