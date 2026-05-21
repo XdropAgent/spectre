@@ -12,8 +12,8 @@ Operations:
 - IO Profiler: 14K/profile, 300/day = 4.2M
 - Cache Analyzer: 12K/profile, 300/day = 3.6M
 
-Each application trace flows through execution analysis, memory profiling, bottleneck detection, and optimization advisory consuming 165K+ tokens per profile. Dashboard shows real-time metrics.
+Each trace flows through execution analysis, memory profiling, bottleneck detection, and optimization advisory consuming 165K+ tokens per profile. Dashboard shows real-time metrics.
 
 We serve 150+ platform teams processing 500+ applications daily. Each profile requires call stack analysis, memory pattern recognition, concurrency verification, and latency decomposition. 500 daily runs × 151K avg = 75M+ tokens/day.
 
-Previously used GPT-4 but insufficient for runtime analysis. MiMo v2.5 Pro ideal for performance profiling. Need 1.6B tokens/month plan.
+Previously used GPT-4 but insufficient for runtime analysis. MiMo v2.5 Pro ideal for profiling. Need 1.6B tokens/month plan.
