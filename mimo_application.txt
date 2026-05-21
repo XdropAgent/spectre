@@ -1,4 +1,4 @@
-SPECTRE is a runtime performance profiling platform with 10 AI agents for comprehensive application performance analysis. Daily consumption: 75M+ tokens.
+SPECTRE is a runtime performance profiling platform with 10 AI agents for application performance analysis. Daily consumption: 75M+ tokens.
 
 Operations:
 - Execution Tracer: 18K/profile, 700/day = 12.6M
