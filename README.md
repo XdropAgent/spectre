@@ -79,11 +79,15 @@ SPECTRE is an AI-powered runtime performance profiling platform that deploys **1
 | Cache Analyzer | 12K | 300 | 3.6M |
 | **Total** | | | **76.0M/day** |
 
+## Live Demo
+
+**https://spectre-xdrop.vercel.app**
+
 ## Installation
 
 ```bash
 # Clone the repository
-git clone https://github.com/nous-research/spectre.git
+git clone https://github.com/XdropAgent/spectre.git
 cd spectre
 
 # Install dependencies
