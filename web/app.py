@@ -4,7 +4,11 @@
 from flask import Flask, render_template, request, jsonify
 import random, uuid
 
-app = Flask(__name__)
+import os
+_BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+app = Flask(__name__,
+            template_folder=os.path.join(_BASE_DIR, 'templates'),
+            static_folder=os.path.join(_BASE_DIR, 'static'))
 
 AGENTS = [
     {"name": "Execution Tracer", "desc": "Call stacks, execution paths, hot paths", "tokens": 18000, "runs": 4800, "success": 99.1, "avg_time": 3.8},
