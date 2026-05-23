@@ -14,6 +14,8 @@
  ╚══════════════════════════════════════════════════════════════╝
 ```
 
+### 🔗 Live Demo → https://spectre-xdrop.vercel.app
+
 # SPECTRE — Runtime Performance Profiler
 
 SPECTRE is an AI-powered runtime performance profiling platform that deploys **10 specialized agents** to analyze application performance, detect bottlenecks, and provide actionable optimization recommendations. Processing **76M+ tokens daily**, SPECTRE serves 150+ engineering teams with deep, automated performance analysis.
@@ -78,10 +80,6 @@ SPECTRE is an AI-powered runtime performance profiling platform that deploys **1
 | IO Profiler | 14K | 300 | 4.2M |
 | Cache Analyzer | 12K | 300 | 3.6M |
 | **Total** | | | **76.0M/day** |
-
-## Live Demo
-
-**https://spectre-xdrop.vercel.app**
 
 ## Installation
 
